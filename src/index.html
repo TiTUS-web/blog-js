@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>TiTUS BLOG</title>
+</head>
+
+<body>
+  <header id="header">
+    <h1 class="title header-title">T<span>i</span>TUS BLOG PRO<span>j</span>ECT</h1>
+    <button class="get-started button button-primaty header-button js-header-start">
+      Приступить
+    </button>
+  </header>
+
+  <section class="container body-container w-container container-display">
+    <ul class="tabs" id="navigation">
+      <li><a class="tab" href="#" data-name="posts">Посты</a></li>
+      <li><a class="tab active" href="#" data-name="create">Создать</a></li>
+      <li><a class="tab" href="#" data-name="favorite">Избранное</a></li>
+    </ul>
+
+    <div class="loader-wrap hide" id="loader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <form id="create">
+      <h4 class="create-title">Создать новый пост</h4>
+
+      <div class="form-control">
+        <label>Название</label>
+        <input type="text" name="title" placeholder="Введите название" />
+      </div>
+
+      <div class="form-control">
+        <label>Текст</label>
+        <textarea name="fulltext" placeholder="Введите текст поста"></textarea>
+      </div>
+
+      <div class="form-control">
+        <label>Тип</label>
+        <select name="type">
+          <option value="note" selected>Заметка</option>
+          <option value="news">Новость</option>
+        </select>
+      </div>
+
+      <button class="button-create" type="submit">
+        Создать
+      </button>
+    </form>
+    <div id="posts" class="hide"></div>
+    <div id="favorite" class="hide"></div>
+  </section>
+</body>
+
+</html>
